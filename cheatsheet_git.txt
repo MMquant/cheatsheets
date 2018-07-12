@@ -1,0 +1,28 @@
+BASIC
+
+    # Create new repository for existing project
+    git init
+
+    # Add files in repository
+    git add file.txt
+
+    # Commit staged files with commit message
+    git commit -m "message"
+
+    # List local branches
+    git branch
+
+    # Checkout branch
+    git checkout [branch]
+
+    # Merge branch A to master
+    git checkout master
+    git merge A
+
+ADVANCED
+
+    # List all files under version control in given branch
+    git ls-tree -r [branch] --name-only
+
+    # Remove staged files, [-r recursive]
+    git rm [-r] --cached [file]
