@@ -1,0 +1,394 @@
+REQUIREMENTS
+
+    Specific Functional Requirements
+        􏰀
+        Are all the inputs to the system specified, including their source, accuracy, range of values, and frequency?
+        􏰀Are all the outputs from the system specified, including their destination, accuracy, range of values, frequency, and format?
+        􏰀Are all output formats specified for web pages, reports, and so on?
+        􏰀Are all the external hardware and software interfaces specified?
+        􏰀Are all the external communication interfaces specified, including handshaking, error-checking, and communication protocols?
+        􏰀Are all the tasks the user wants to perform specified?
+        􏰀Is the data used in each task and the data resulting from each task specified?
+
+    Specific Non-Functional (Quality) Requirements
+        􏰀
+        Is the expected response time, from the user’s point of view, specified for all necessary operations?
+        􏰀Are other timing considerations specified, such as processing time, data- transfer rate, and system throughput?
+        􏰀Is the level of security specified?
+        􏰀Is the reliability specified, including the consequences of software failure, the vital information that needs to be protected from failure, and the strategy for error detection and recovery?
+        􏰀Is maximum memory specified?
+        􏰀Is the maximum storage specified?
+        􏰀Is the maintainability of the system specified, including its ability to adapt to changes in specific functionality, changes in the operating environment, and changes in its interfaces with other software?
+        􏰀Is the definition of success included? Of failure?
+
+    Requirements Quality
+        
+        Are the requirements written in the user’s language? Do the users think so? Does each requirement avoid conflicts with other requirements?
+        Are acceptable trade-offs between competing attributes specified—for ex- ample, between robustness and correctness?
+        Do the requirements avoid specifying the design?
+        Are the requirements at a fairly consistent level of detail? Should any re- quirement be specified in more detail? Should any requirement be specified in less detail?
+        Are the requirements clear enough to be turned over to an independent group for construction and still be understood?
+        Is each item relevant to the problem and its solution? Can each item be traced to its origin in the problem environment?
+        Is each requirement testable? Will it be possible for independent testing to determine whether each requirement has been satisfied?
+        Are all possible changes to the requirements specified, including the likeli- hood of each change?
+
+    Requirements Completeness 􏰀 􏰀
+        
+        Where information isn’t available before development begins, are the areas of incompleteness specified?
+        Are the requirements complete in the sense that if the product satisfies every requirement, it will be acceptable?
+        Are you comfortable with all the requirements? Have you eliminated re- quirements that are impossible to implement and included just to appease your customer or your boss?
+
+ARCHITECTURE
+
+    Specific Architectural Topics
+        
+        Is the overall organization of the program clear, including a good architec- tural overview and justification?
+        Are major building blocks well defined, including their areas of responsibil- ity and their interfaces to other building blocks?
+        Are all the functions listed in the requirements covered sensibly, by neither too many nor too few building blocks?
+        Are the most critical classes described and justified?
+        Is the data design described and justified?
+        Is the database organization and content specified?
+        Are all key business rules identified and their impact on the system de- scribed?
+        Is a strategy for the user interface design described?
+        Is the user interface modularized so that changes in it won’t affect the rest of the program?
+        Is a strategy for handling I/O described and justified?
+        Are resource-use estimates and a strategy for resource management de- scribed and justified?
+        Are the architecture’s security requirements described?
+        Does the architecture set space and speed budgets for each class, subsystem, or functionality area?
+        Does the architecture describe how scalability will be achieved? Does the architecture address interoperability?
+        Is a strategy for internationalization/localization described?
+        Is a coherent error-handling strategy provided?
+        Is the approach to fault tolerance defined (if any is needed)?
+        Has technical feasibility of all parts of the system been established?
+        Is an approach to overengineering specified?
+        Are necessary buy-vs.-build decisions included?
+        Does the architecture describe how reused code will be made to conform to other architectural objectives?
+        Is the architecture designed to accommodate likely changes?
+        Does the architecture describe how reused code will be made to conform to other architectural objectives?
+
+    General Architectural Quality
+        
+        Does the architecture account for all the requirements?
+        Is any part over- or under-architected? Are expectations in this area set out explicitly?
+        Does the whole architecture hang together conceptually?
+        Is the top-level design independent of the machine and language that will be used to implement it?
+        Are the motivations for all major decisions provided?
+        Are you, as a programmer who will implement the system, comfortable with the architecture?
+
+MAJOR CONSTRUCTION PRACTICES
+
+    Coding
+        
+        Have you defined coding conventions for names, comments, and formatting?
+        Have you defined specific coding practices that are implied by the architecture, such as how error conditions will be handled, how security will be addressed, and so on?
+        Have you identified your location on the technology wave and adjusted your approach to match? If necessary, have you identified how you will program into the language rather than being limited by programming in it?
+
+    Teamwork
+        
+        Have you defined an integration procedure, that is, have you defined the specific steps a programmer must go through before checking code into the master sources?
+        Will programmers program in pairs, or individually, or some combination of the two?
+
+    Quality Assurance
+        􏰀
+        Will programmers write test cases for their code before writing the code itself?
+        􏰀Will programmers write unit tests for the their code regardless of whether they write them first or last?
+        􏰀Will programmers step through their code in the debugger before they check it in?
+        􏰀Will programmers integration-test their code before they check it in?
+        􏰀Will programmers review or inspect each others’ code?
+
+    Tools
+        
+        Have you selected a revision control tool?
+        Have you selected a language and language version or compiler version?
+        Have you decided whether to allow use of non-standard language features?
+        Have you identified and acquired other tools you’ll be using—editor, refactoring tool, debugger, test framework, syntax checker, and so on?
+
+DESIGN LEVELS
+    
+    1.Software system
+    2.Division into subsystems/packages.
+    3.Division into classes within packages.
+    4.Division into data and routines within classes.
+    5.Internal routine design
+
+DESIGN IN CONSTRUCTION
+
+    Design Practices
+
+        Have you iterated, selecting the best of several attempts rather than the first attempt?
+        Have you tried decomposing the system in several different ways to see which way will work best?
+        Have you approached the design problem both from the top down and from the bottom up?
+        Have you prototyped risky or unfamiliar parts of the system, creating the absolute minimum amount of throwaway code needed to answer specific questions?
+        Has you design been reviewed, formally or informally, by others?
+        Have you driven the design to the point that its implementation seems obvious?
+        Have you captured your design work using an appropriate technique such as a Wiki, email, flipcharts, digital camera, UML, CRC cards, or comments in the code itself?
+
+    Design Goals
+
+        Does the design adequately address issues that were identified and deferred at the architectural level?
+        Is the design stratified into layers?
+        Are you satisfied with the way the program has been decomposed into subsystems, packages, and classes?
+        Are you satisfied with the way the classes have been decomposed into routines?
+        Are classes designed for minimal interaction with each other?
+        Are classes and subsystems designed so that you can use them in other systems?
+        Will the program be easy to maintain?
+        Is the design lean? Are all of its parts strictly necessary?
+        Does the design use standard techniques and avoid exotic, hard-to- understand elements?
+        Overall, does the design help minimize both accidental and essential complexity?
+
+CLASS QUALITY
+
+    Abstract Data Types
+        
+        Have you thought of the classes in your program as Abstract Data Types and evaluated their interfaces from that point of view?
+
+    Abstraction
+
+        Does the class have a central purpose?
+        Is the class well named, and does its name describe its central purpose?
+        Does the class’s interface present a consistent abstraction?
+        Does the class’s interface make obvious how you should use the class?
+        Is the class’s interface abstract enough that you don’t have to think about how its services are implemented?
+        Can you treat the class as a black box?
+        Are the class’s services complete enough that other classes don’t have to meddle with its internal data?
+        Has unrelated information been moved out of the class?
+        Have you thought about subdividing the class into component classes, and have you subdivided it as much as you can?
+        Are you preserving the integrity of the class’s interface as you modify the class?
+
+    Encapsulation
+
+        Does the class minimize accessibility to its members?
+        Does the class avoid exposing member data?
+        Does the class hide its implementation details from other classes as much as the programming language permits?
+        Does the class avoid making assumptions about its users, including its derived classes?
+        Is the class independent of other classes? Is it loosely coupled?
+
+    Inheritance
+        
+        Is inheritance used only to model “is a” relationships?
+        Does the class documentation describe the inheritance strategy?
+        Do derived classes adhere to the Liskov Substitution Principle?
+        Do derived classes avoid “overriding” non overridable routines?
+        Are common interfaces, data, and behavior as high as possible in the inheritance tree?
+        Are inheritance trees fairly shallow?
+        Are all data members in the base class private rather than protected?
+
+    Other Implementation Issues
+
+        Does the class contain about seven data members or fewer?
+        Does the class minimize direct and indirect routine calls to other classes?
+        Does the class collaborate with other classes only to the extent absolutely necessary?
+        Is all member data initialized in the constructor?
+        Is the class designed to be used as deep copies rather than shallow copies unless there’s a measured reason to create shallow copies?
+
+    Language-Specific Issues
+
+        Have you investigated the language-specific issues for classes in your specific programming language?
+
+HIGH-QUALITY ROUTINES
+
+    Big-Picture Issues
+        
+        Is the reason for creating the routine sufficient?
+        Have all parts of the routine that would benefit from being put into routines of their own been put into routines of their own?
+        Is the routine’s name a strong, clear verb-plus-object name for a procedure or a description of the return value for a function?
+        Does the routine’s name describe everything the routine does? Have you established naming conventions for common operations?
+        Does the routine have strong, functional cohesion—doing one and only one thing and doing it well?
+        Do the routines have loose coupling—are the routine’s connections to other routines small, intimate, visible, and flexible?
+        Is the length of the routine determined naturally by its function and logic, rather than by an artificial coding standard?
+
+    Parameter-Passing Issues
+        
+        Does the routine’s parameter list, taken as a whole, present a consistent interface abstraction?
+        Are the routine’s parameters in a sensible order, including matching the order of parameters in similar routines?
+        Are interface assumptions documented?
+        Does the routine have seven or fewer parameters? 􏰀 Is each input parameter used?
+        Is each output parameter used?
+        Does the routine avoid using input parameters as working variables?
+        If the routine is a function, does it return a valid value under all possible circumstances?
+
+DEFENSIVE PROGRAMMING
+
+    General
+
+        Does the routine protect itself from bad input data?
+        Have you used assertions to document assumptions, including preconditions and postconditions?
+        Have assertions been used only to document conditions that should never occur?
+        Does the architecture or high-level design specify a specific set of error han- dling techniques?
+        Does the architecture or high-level design specify whether error handling should favor robustness or correctness?
+        Have barricades been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
+        Have debugging aids been used in the code?
+        Has information hiding been used to contain the effects of changes so that they won’t affect code outside the routine or class that’s changed?
+        Have debugging aids been installed in such a way that they can be activated or deactivated without a great deal of fuss?
+        Is the amount of defensive programming code appropriate—neither too much nor too little?
+        Have you used offensive programming techniques to make errors difficult to overlook during development?
+
+    Exceptions
+
+        Has your project defined a standardized approach to exception handling?
+        Have you considered alternatives to using an exception?
+        Is the error handled locally rather than throwing a non-local exception if possible?
+        Does the code avoid throwing exceptions in constructors and destructors?
+        Are all exceptions at the appropriate levels of abstraction for the routines that throw them?
+        Does each exception include all relevant exception background information?
+        Is the code free of empty catch blocks? (Or if an empty catch block truly is appropriate, is it documented?)
+
+    Security Issues
+
+        Does the code that checks for bad input data check for attempted buffer overflows, SQL injection, html injection, integer overflows, and other mali- cious inputs?
+        Are all error-return codes checked?
+        Are all exceptions caught?
+        Do error messages avoid providing information that would help an attacker break into the system?
+
+THE PSEUDOCODE PROGRAMMING PROCESS
+
+    Have you checked that the prerequisites have been satisfied?
+    Have you defined the problem that the class will solve?
+    Is the high level design clear enough to give the class and each of its routines a good name?
+    Have you thought about how to test the class and each of its routines?
+    Have you thought about efficiency mainly in terms of stable interfaces and readable implementations, or in terms of meeting resource and speed budgets?
+    Have you checked the standard libraries and other code libraries for applicable routines or components?
+    Have you checked reference books for helpful algorithms?
+    Have you designed each routine using detailed pseudocode?
+    Have you mentally checked the pseudocode? Is it easy to understand?
+    Have you paid attention to warnings that would send you back to design (use of global data, operations that seem better suited to another class or another routine, and so on)?
+    Did you translate the pseudocode to code accurately?
+    Did you apply the PPP recursively, breaking routines into smaller routines when needed?
+    Did you document assumptions as you made them?
+    Did you remove comments that turned out to be redundant?
+    Have you chosen the best of several iterations, rather than merely stopping after your first iteration?
+    Do you thoroughly understand your code? Is it easy to understand?
+
+GENERAL CONSIDERATIONS IN USING DATA
+
+    Initializing Variables
+
+        Does each routine check input parameters for validity?
+        Does the code declare variables close to where they’re first used?
+        Does the code initialize variables as they’re declared, if possible?
+        Does the code initialize variables close to where they’re first used, if it isn’t possible to declare and initialize them at the same time?
+        Are counters and accumulators initialized properly and, if necessary, reinitialized each time they are used?
+        Are variables reinitialized properly in code that’s executed repeatedly? Does the code compile with no warnings from the compiler?
+        If your language uses implicit declarations, have you compensated for the problems they cause?
+
+    Other General Issues in Using Data
+
+        Do all variables have the smallest scope possible?
+        Are references to variables as close together as possible—both from each reference to a variable to the next and in total live time? 
+        Do control structures correspond to the data types?
+        Are all the declared variables being used?
+        Are all variables bound at appropriate times, that is, striking a conscious balance between the flexibility of late binding and the increased complexity associated with late binding?
+        Does each variable have one and only one purpose?
+        Is each variable’s meaning explicit, with no hidden meanings?
+
+NAMING VARIABLES
+
+    General Naming Considerations
+        
+        Does the name fully and accurately describe what the variable represents? 􏰀 Does the name refer to the real-world problem rather than to the
+        programming-language solution?
+        Is the name long enough that you don’t have to puzzle it out?
+        Are computed-value qualifiers, if any, at the end of the name?
+        Does the name use Count or Index instead of Num?
+
+    Naming Specific Kinds Of Data
+
+        Are loop index names meaningful (something other than i, j, or k if the loop is more than one or two lines long or is nested)?
+        Have all “temporary” variables been renamed to something more meaningful?
+        Are boolean variables named so that their meanings when they’re True are clear?
+        Do enumerated-type names include a prefix or suffix that indicates the category—for example, Color_ for Color_Red, Color_Green, Color_Blue, and so on?
+        Are named constants named for the abstract entities they represent rather than the numbers they refer to?
+
+    Naming Conventions
+
+        Does the convention distinguish among local, class, and global data?
+        Does the convention distinguish among type names, named constants, enumerated types, and variables?
+        Does the convention identify input-only parameters to routines in languages that don’t enforce them?
+        Is the convention as compatible as possible with standard conventions for the language?
+        Are names formatted for readability?
+
+    Short Names
+
+        Does the code use long names (unless it’s necessary to use short ones)?
+        Does the code avoid abbreviations that save only one character?
+        Are all words abbreviated consistently?
+        Are the names pronounceable?
+        Are names that could be mispronounced avoided?
+        Are short names documented in translation tables?
+
+    Common Naming Problems: Have You Avoided...
+
+        ...names that are misleading?
+        ...names with similar meanings?
+        ...names that are different by only one or two characters?
+        ...names that sound similar?
+        ...names that use numerals?
+        ...names intentionally misspelled to make them shorter?
+        ...names that are commonly misspelled in English?
+        ...names that conflict with standard library-routine names or with predefined variable names?
+        ...totally arbitrary names?
+        ...hard-to-read characters?
+
+FUNDAMENTAL DATA
+
+    Numbers in General
+        
+        Does the code avoid magic numbers?
+        Does the code anticipate divide-by-zero errors?
+        Are type conversions obvious?
+        If variables with two different types are used in the same expression, will the expression be evaluated as you intend it to be?
+        Does the code avoid mixed-type comparisons?
+        Does the program compile with no warnings?
+
+    Integers
+
+        Do expressions that use integer division work the way they’re meant to?
+        Do integer expressions avoid integer-overflow problems?
+
+    Floating-Point Numbers
+
+        Does the code avoid additions and subtractions on numbers with greatly different magnitudes?
+        Does the code systematically prevent rounding errors?
+        Does the code avoid comparing floating-point numbers for equality?
+
+    Characters and Strings
+
+        Does the code avoid magic characters and strings?
+        Are references to strings free of off-by-one errors?
+        Does C code treat string pointers and character arrays differently?
+        Does C code follow the convention of declaring strings to be length constant+1?
+        Does C code use arrays of characters rather than pointers, when appropriate?
+        Does C code initialize strings to NULLs to avoid endless strings?
+        Does C code use strncpy() rather than strcpy()? And strncat() and strncmp()?
+
+    Boolean Variables
+
+        Does the program use additional boolean variables to document conditional tests?
+        Does the program use additional boolean variables to simplify conditional tests?
+
+    Enumerated Types
+
+        Does the program use enumerated types instead of named constants for their improved readability, reliability, and modifiability?
+        Does the program use enumerated types instead of boolean variables when a variable’s use cannot be completely captured with TRUE and FALSE?
+        Do tests using enumerated types test for invalid values?
+        Is the first entry in an enumerated type reserved for “invalid”?
+
+    Named Constants
+
+        Does the program use named constants for data declarations and loop limits rather than magic numbers?
+        Have named constants been used consistently—not named constants in some places, literals in others?
+
+    Arrays
+
+        Are all array indexes within the bounds of the array?
+        Are array references free of off-by-one errors?
+        Are all subscripts on multidimensional arrays in the correct order?
+        In nested loops, is the correct variable used as the array subscript, avoiding loop-index cross talk?
+
+    Creating Types
+
+        Does the program use a different type for each kind of data that might change?
+        Are type names oriented toward the real-world entities the types represent rather than toward programming-language types?
+        Are the type names descriptive enough to help document data declarations? Have you avoided redefining predefined types?
+        Have you considered creating a new class rather than simply redefining a type?
+

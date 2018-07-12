@@ -1,0 +1,15 @@
+NAVIGATION
+
+    move focus to next editor           ctrl + `
+    move focus to previous editor       shift + ctrl + `
+
+CURSOR
+    
+    move cursor by 1 page up/down       alt + PgUp/PgDown
+
+FOLDING
+
+    Fold                                alt + cmd + <-
+    Unfold                              alt + cmd + ->
+    Fold all                            alt + shift + cmd + <-
+    Unfold all                          alt + shift + cmd + ->
