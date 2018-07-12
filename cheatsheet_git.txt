@@ -9,6 +9,12 @@ BASIC
     # Commit staged files with commit message
     git commit -m "message"
 
+    # Link local repository with remote repository
+    git remote add origin https://github.com/MMquant/cheatsheets.git
+
+    # Push to remote and add tracking reference for master branch
+    git push -u origin master
+
     # List local branches
     git branch
 
