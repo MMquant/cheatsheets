@@ -1,3 +1,7 @@
+VIEW
+
+    show assistant editor               alt + cmd + enter
+
 NAVIGATION
 
     move focus to next editor           ctrl + `
@@ -13,3 +17,4 @@ FOLDING
     Unfold                              alt + cmd + ->
     Fold all                            alt + shift + cmd + <-
     Unfold all                          alt + shift + cmd + ->
+
