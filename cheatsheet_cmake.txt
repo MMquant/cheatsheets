@@ -1,0 +1,24 @@
+# Set the minimum required version of cmake for a project
+cmake_minimum_required (VERSION 3.12)
+
+# Set project name
+project (example)
+
+# Add build directories to the project
+# All subdirectories with own CMakeLists must be added
+add_subdirectory (lib)
+
+# Adds an executable target called example to be built from the source files
+add_executable (example example.cpp)
+
+# Output build binaries into custom directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
+
+# Create and conditionally append to list
+set(SOURCES archive.cpp zip.cpp)
+if (LZMA_FOUND)
+  list(APPEND SOURCES lzma.cpp)
+endif()
+
+# Declare compile definitions
+target_compile_definitions(archive INTERFACE USING_ARCHIVE_LIB)
