@@ -42,3 +42,5 @@ ADVANCED
     # Create and checkout feature branch from develop branch
     git checkout -b feature develop
     
+    # Destroy all commits newer than 0d1d7fc32 and set HEAD onto 0d1d7fc32
+    git reset --hard 0d1d7fc32
