@@ -762,3 +762,73 @@ REFACTORING
             Provide a factory routine rather than a simple constructor.
             Replace error codes with exceptions or vice versa.
 
+    Refactoring Safely
+
+        Is each change part of a systematic change strategy?
+        Did you save the code you started with before beginning refactoring?
+        Are you keeping each refactoring small?
+        Are you doing refactorings one at a time?
+        Have you made a list of steps you intend to take during your refactoring?
+        Do you have a parking lot so that you can remember ideas that occur to you mid-refactoring?
+        Have you retested after each refactoring?
+        Have changes been reviewed if they are complicated or if they affect mission-critical code?
+        Have you considered the riskiness of the specific refactoring, and adjusted your approach accordingly?
+        Does the change enhance the program’s internal quality rather than degrading it?
+        Have you avoided using refactoring as a cover for code and fix or as an excuse for not rewriting bad code?
+
+CODE-TUNING STRATEGY
+
+    Overall Program Performance
+
+        Have you considered improving performance by changing the program requirements?
+        Have you considered improving performance by modifying the program’s design?
+        Have you considered improving performance by modifying the class design?
+        Have you considered improving performance by avoiding operating system interactions?
+        Have you considered improving performance by avoiding I/O?
+        Have you considered improving performance by using a compiled language instead of an interpreted language?
+        Have you considered improving performance by using compiler optimizations?
+        Have you considered improving performance by switching to different hardware?
+        Have you considered code tuning only as a last resort?
+
+    Code-Tuning Approach
+
+        Is your program fully correct before you begin code tuning?
+        Have you measured performance bottlenecks before beginning code tuning?
+        Have you measured the effect of each code-tuning change?
+        Have you backed out the code-tuning changes that didn’t produce the intended improvement?
+        Have you tried more than one change to improve performance of each bottleneck, i.e., iterated?
+
+CODE-TUNING TECHNIQUES
+
+    Improve Both Speed and Size
+
+        Substitute table lookups for complicated logic.
+        Jam loops.
+        Use integer instead of floating-point variables.
+        Initialize data at compile time.
+        Use constants of the correct type.
+        Precompute results.
+        Eliminate common subexpressions.
+        Translate key routines to assembler.
+
+    Improve Speed Only
+
+        Stop testing when you know the answer.
+        Order tests in case statements and if-then-else chains by frequency.
+        Compare performance of similar logic structures.
+        Use lazy evaluation.
+        Unswitch loops that contain if tests.
+        Unroll loops.
+        Minimize work performed inside loops.
+        Use sentinels in search loops.
+        Put the busiest loop on the inside of nested loops.
+        Reduce the strength of operations performed inside loops.
+        Change multiple-dimension arrays to a single dimension.
+        Minimize array references.
+        Augment data types with indexes.
+        Cache frequently used values.
+        Exploit algebraic identities.
+        Reduce strength in logical and mathematical expressions.
+        Be wary of system routines.
+        Rewrite routines in line.
+
