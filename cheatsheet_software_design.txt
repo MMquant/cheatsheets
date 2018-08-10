@@ -1003,4 +1003,82 @@ SELF-DOCUMENTING CODE
         Are implementation details hidden as much as possible?
         Is the program written in terms of the problem domain as much as possible rather than in terms of computer-science or programming-language structures?
 
-    
+GOOD COMMENTING TECHNIQUE
+
+    General
+
+        Can someone pick up the code and immediately start to understand it?
+        Do comments explain the code’s intent or summarize what the code does, rather than just repeating the code?
+        Is the Pseudocode Programming Process used to reduce commenting time?
+        Has tricky code been rewritten rather than commented?
+        Are comments up to date?
+        Are comments clear and correct?
+        Does the commenting style allow comments to be easily modified?
+
+    Statements and Paragraphs
+
+        Does the code avoid endline comments?
+        Do comments focus on why rather than how?
+        Do comments prepare the reader for the code to follow?
+        Does every comment count?
+        Have redundant, extraneous, and self-indulgent comments been removed or improved?
+        Are surprises documented?
+        Have abbreviations been avoided?
+        Is the distinction between major and minor comments clear?
+        Is code that works around an error or undocumented feature commented?
+
+    Data Declarations
+
+        Are units on data declarations commented?
+        Are the ranges of values on numeric data commented?
+        Are coded meanings commented?
+        Are limitations on input data commented?
+        Are flags documented to the bit level?
+        Has each global variable been commented where it is declared?
+        Has each global variable been identified as such at each usage, by a naming convention, a comment, or both?
+        Are magic numbers replaced with named constants or variables rather than just documented?
+
+    Control Structures
+
+        Is each control statement commented?
+        Are the ends of long or complex control structures commented or, when possible, simplified so that they don’t need comments?
+
+    Routines
+
+        Is the purpose of each routine commented?
+        Are other facts about each routine given in comments, when relevant, including input and output data, interface assumptions, limitations, error corrections, global effects, and sources of algorithms?
+
+    Files, Classes, and Programs
+
+        Does the program have a short document such as that described in the Book Paradigm that gives an overall view of how the program is organized?
+        Is the purpose of each file described?
+        Are the author’s name, email address, and phone number in the listing?
+
+BOOKS
+
+    Introductory level
+
+        Adams, James L. Conceptual Blockbusting: A Guide to Better Ideas, 4th ed. Cambridge, Mass.: Perseus Publishing.
+        Bentley, Jon. Programming Pearls, 2d Ed. Reading, Mass.: Addison-Wesley, 2000.
+        Glass, Robert L. Facts and Fallacies of Software Engineering, Boston, Mass.: Addison Wesley, 2003.
+        McConnell, Steve. Software Project Survival Guide. Redmond, WA: Microsoft Press, 1998.
+        McConnell, Steve. Code Complete, 2d Ed.. Redmond, WA: Microsoft Press, 2004.
+
+    Practitioner Level
+
+        Berczuk, Stephen P. and Brad Appleton. Software Configuration Management Patterns: Effective Teamwork, Practical Integration, Boston, Mass.: Addison Wesley, 2003.
+        Fowler, Martin. UML Distilled: A Brief Guide to the Standard Object Modeling Language, 3d Ed, Boston, Mass.: Addison Wesley, 2003.
+        Glass, Robert L. Software Creativity, Reading, Mass.: Addison Wesley, 1995. Kaner, Cem, Jack Falk, Hung Q. Nguyen. Testing Computer Software, 2d Ed.,
+        New York: John Wiley & Sons, 1999.
+        Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and the Unified Process, 2d Ed., Englewood Cliffs, N.J.: Prentice Hall, 2001.
+        McConnell, Steve. Rapid Development. Redmond, WA: Microsoft Press, 1996. Wiegers, Karl. Software Requirements, 2d Ed. Redmond, WA: Microsoft Press, 2003.
+        “Manager’s Handbook for Software Development”, NASA Goddard Space Flight Center. Downloadable from sel.gsfc.nasa.gov/website/documents/online- doc.htm.
+
+    Professional Level
+
+        Bass, Len, Paul Clements, and Rick Kazman. Software Architecture in Practice, Second Edition, Boston, Mass.: Addison Wesley, 2003.
+        Fowler, Martin. Refactoring: Improving the Design of Existing Code, Reading, Mass.: Addison Wesley, 1999.
+        Gamma, Erich, et al. Design Patterns, Reading, Mass.: Addison Wesley, 1995. Gilb, Tom. Principles of Software Engineering Management. Wokingham, England: Addison-Wesley.
+        Maguire, Steve. Writing Solid Code. Redmond, WA: Microsoft Press, 1993.
+        Meyer, Bertrand. Object-Oriented Software Construction, 2d Ed. New York: Prentice Hall PTR, 1997.
+        “Software Measurement Guidebook”, NASA Goddard Space Flight Center. Available from sel.gsfc.nasa.gov/website/documents/online-doc.htm.
